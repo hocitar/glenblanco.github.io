@@ -12,61 +12,40 @@
     <title>Chapters</title>
 </head>
 <body>
-    <div>
-        <h1>Chapters</h1>
-
-        <div class="fullCard" id="thumbnail">
-            <div class="cardContent">
-                <div class="cardText">
-                    <h4>Medical Terminology</h4>
-                    <hr/>
-                    <p>Common prefixes, roots, and suffixes used in A&P</p> 
+    <header>
+        <div class="container">
+            <div class="nav">
+                <h1>Flashcards</h1>
+                <div>
+                <button onclick="showCreateCardBox()">New Card</button>
+                <button onclick="delFlashcards()">Delete Card</button>
                 </div>
             </div>
         </div>
+    </header>
 
-        <div class="fullCard" id="thumbnail">
-            <div class="cardContent">
-                <div class="cardText">
-                    <h4>Body Cavities</h4>
-                    <hr/>
-                    <p>Cavities of the Body</p> 
-                </div>
+    <div class="container">
+        <div class="create-box">
+            <h2 style="text-align: center; color: black;">Create Flashcard</h2>
+            <label for="question">Question</label>
+            <textarea id="question"></textarea>
+            <br>
+            <label for="answer">Answer</label>
+            <textarea id="answer"></textarea>
+            <div>
+                <button onclick="addFlashcard()">Save</button>
+                <button onclick="hideCreateBox()">Close</button>
             </div>
         </div>
+        <div class="flashcards">
 
-        <div class="fullCard" id="thumbnail">
-            <div class="cardContent">
-                <div class="cardText">
-                    <h4>Regions</h4>
-                    <hr/>
-                    <p>Regions of Body</p> 
-                </div>
-            </div>
         </div>
-
-        <div class="fullCard" id="thumbnail">
-            <div class="cardContent">
-                <div class="cardText">
-                    <h4>Systems</h4>
-                    <hr/>
-                    <p>Systems of the body</p>
-                    <p>Major organs</p> 
-                </div>
-            </div>
-        </div>
-
-
-
-
-
-
-
-
-
-
-
 
     </div>
+
+
+
+    <script src="script.js"></script>
+
 </body>
 </html>

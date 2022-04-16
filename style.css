@@ -1,41 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1rem;
+  background-color: whitesmoke;
 }
 
-h4 {
-    text-align: left;
-    background-color: rgba(122, 122, 122, 0.1);
-    padding: 10px;
-    font-size: 27px;
-  }
-
-p {
-  text-align: justify;
+header{
+  background-color: white;
 }
 
-.links {
-    text-align: left;
-    color: black;
+button{
+  padding: 8px;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  background-color: whitesmoke;
 }
 
-#thumbnail{
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+button:hover{
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
-.fullCard{
-    width: 15%;
-    height: 250px;
-    border: 1px solid #ccc;
-    margin: 10px 5px;
-    padding: 4px;
-    float: left;
+.container{
+  width: 95%;
+  margin: auto;
 }
 
-.cardContent {
-    padding: 10px;
-  }
-
-.cardText {
-    margin-bottom: 30px;
+.nav{
+  display: flex;
+  justify-content: space-between;
+  width: 100;
+  margin: auto;
+  padding: 20px 0;
+  background-color: white;
 }
 
+.nav button{
+  font-family: inherit;
+}
+
+.create-box{
+  
+}
